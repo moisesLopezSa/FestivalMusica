@@ -1,0 +1,89 @@
+@use "global/colors" as c;
+@use "global/mixin" as m;
+
+/* LINE UP */
+
+.lineUp {
+  background-color: c.$pink;
+  color: c.$white;
+  .lineUp--date {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+  }
+}
+
+.lineUp__schedule {
+  color: c.$black;
+  @include m.tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.lineUp__schedule--yellow {
+  display: flex;
+  flex-direction: column;
+  background-color: c.$yellow;
+
+  p {
+    margin: 3rem 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0
+  }
+
+  li{
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 2.5rem;
+    span{
+      font-weight: normal;
+    }
+  }
+
+  li:nth-child(2n+1){
+    background-color: c.$darkYellow;
+  }
+}
+
+
+
+.lineUp__schedule--green {
+  display: flex;
+  flex-direction: column;
+  background-color: c.$green;
+  
+  p {
+    margin: 3rem 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0
+  }
+
+  li{
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 2.5rem;
+    span{
+      font-weight: normal;
+    }
+  }
+
+  li:nth-child(2n+1){
+    background-color: c.$darkGreen;
+  }
+}

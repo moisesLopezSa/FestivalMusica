@@ -1,0 +1,36 @@
+@use "global/colors" as c;
+@use "global/mixin" as m;
+
+/* ABOUT US */
+
+.aboutFestival {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  @include m.tablet{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.aboutFestival__img {
+  img{
+    width: 100%;
+  }
+}
+
+.aboutFestival__info {
+  .aboutFestival__info--title {
+  }
+  .aboutFestival__info--date {
+    font-size: 2rem;
+    color: c.$green;
+    font-weight: 700;
+  }
+  .aboutFestival__info--description{
+    font-size: 2rem;
+  }
+}

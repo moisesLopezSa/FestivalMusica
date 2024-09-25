@@ -1,0 +1,59 @@
+@use 'global/colors' as c;
+@use 'global/fonts' as f;
+
+/*HEADER PROPERTIES*/
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 4.6rem;
+}
+
+h3 {
+  font-size: 6rem;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  margin: 0 0 5rem 0;
+  font-weight: 900;
+}
+
+/*GENERAL*/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-padding-top: 0rem;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: f.$mainFont;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1.6rem;
+  >section{
+    padding: 10rem 0;
+  }
+
+  &.overflow-hidden {
+    overflow: hidden;
+  }
+
+}
+
+/*CLASSES*/
+.wrap{
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/*ELEMENTS*/
+a{
+  text-decoration: none;
+}

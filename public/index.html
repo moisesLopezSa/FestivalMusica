@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <!-- TITLE -->
+
+    <title>TECHNO & EDM Festival</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+
+    <header class="header">
+      <div class="header__container wrap">
+        <div class="header__container--title">
+          <h1>Techno & EDM Festival</h1>
+        </div>
+        <div class="header__container--nav">
+          <a href="#lineUp">Line Up</a>
+          <a href="#gallery">Galería</a>
+          <a href="#ticket">Boletos</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- BANNER -->
+
+    <div class="banner">
+      <div class="banner__overlay">
+        <div class="banner__overlay--content wrap">
+          <h1 class="banner__info--title">Techno & EDM Festival</h1>
+          <p class="banner__info--date">Julio 2026, CDMX, México</p>
+        </div>
+      </div>
+      <video class="banner__video" autoplay muted loop>
+        <source src="vid/dj.webm" type="video/webm" />
+        <source src="vid/dj.mp4" type="video/mp4" />
+        Tu navegador no soporta la etiqueta de video.
+      </video>
+    </div>
+
+    <!-- ABOUT FESTIVAL -->
+
+    <section class="aboutFestival">
+      <div class="aboutFestival__img">
+        <picture>
+          <source srcset="./img/imagen_dj.avif" type="image/avif"/>
+          <source srcset="./img/imagen_dj.webp" type="image/webp"/>
+          <img loading="lazy" src="./img/imagen_dj.jpg" alt="Imagen de DJ's" />
+        </picture>
+      </div>
+      <div class="aboutFestival__info">
+        <h2 class="aboutFestival__info--title">Techno & EDM Festival</h2>
+        <p class="aboutFestival__info--date">Julio 2026, CDMX, México</p>
+        <p class="aboutFestival__info--description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aut assumenda ullam facilis sapiente dolore
+          ipsam optio cumque laboriosam animi. Doloribus esse libero, quos facilis voluptatem omnis eligendi magni
+          provident?
+        </p>
+      </div>
+    </section>
+
+    <!-- LINE UP -->
+
+    <section id="lineUp" class="lineUp">
+      <h3 class="lineUp--title">Line Up</h3>
+      <p class="lineUp--date">viernes 21</p>
+      <div class="lineUp__schedule wrap">
+        <div class="lineUp__schedule--yellow">
+          <p>Techno</p>
+          <ul>
+            <li>24:00 | <span>Adam Beyer</span></li>
+            <li>22:00 | <span>Carl Cox</span></li>
+            <li>20:00 | <span>HI-LO</span></li>
+            <li>19:00 | <span>Amelie Lens</span></li>
+            <li>18:00 | <span>Camel Phat</span></li>
+            <li>17:00 | <span>ARTBAT</span></li>
+          </ul>
+        </div>
+        <div class="lineUp__schedule--green">
+          <p>EDM</p>
+          <ul>
+            <li>24:00 | <span>David Guetta</span></li>
+            <li>22:00 | <span>Tïesto</span></li>
+            <li>20:00 | <span>Martin Garrix</span></li>
+            <li>19:00 | <span>Steve Aoki</span></li>
+            <li>18:00 | <span>Afrojack</span></li>
+            <li>17:00 | <span>Vintage Culture</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="lineUp--date">sábado 22</p>
+      <div class="lineUp__schedule wrap">
+        <div class="lineUp__schedule--yellow">
+          <p>Techno</p>
+          <ul>
+            <li>24:00 | <span>Reinier Zonneveld</span></li>
+            <li>22:00 | <span>Eric Prydz</span></li>
+            <li>20:00 | <span>Deadmau5</span></li>
+            <li>19:00 | <span>Joris Voorn</span></li>
+            <li>18:00 | <span>Nina Kraviz</span></li>
+            <li>17:00 | <span>Argy</span></li>
+          </ul>
+        </div>
+        <div class="lineUp__schedule--green">
+          <p>EDM</p>
+          <ul>
+            <li>24:00 | <span>Armin Van Buuren</span></li>
+            <li>22:00 | <span>Calvin Harris</span></li>
+            <li>20:00 | <span>Hardwell</span></li>
+            <li>19:00 | <span>Above & Beyond</span></li>
+            <li>18:00 | <span>Diplo</span></li>
+            <li>17:00 | <span>Steve Angello</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+
+    <section id="gallery" class="gallery">
+      <h3 class="gallery--title">Galería</h3>
+      <div id="galleryImg" class="gallery__photo wrap">
+      </div>
+    </section>
+
+    <!-- TICKETS -->
+
+    <section id="ticket" class="ticket">
+      <h3 class="ticket-title">boletos</h3>
+      <div class="ticket__sale wrap">
+        <div class="ticket__day">
+          <p class="ticket__day--title">Pase 1 Día</p>
+          <div class="ticket__dayInclude">
+            <p class="ticket__dayInclude--title">incluye</p>
+            <ul class="ticketInclude--details">
+              <li>Acceso a ambos escenarios</li>
+              <li>Bebida Ilimitada</li>
+              <li>Camisa / Pulsera del Evento</li>
+            </ul>
+            <p class="ticketInclude--cost">$ 100</p>
+          </div>
+        </div>
+        <div class="ticket__day">
+          <p class="ticket__day--title">Pase 2 Días</p>
+          <div class="ticket__dayInclude">
+            <p class="ticket__dayInclude--title">incluye</p>
+            <ul class="ticketInclude--details">
+              <li>Acceso a ambos escenarios</li>
+              <li>Bebida Ilimitada</li>
+              <li>Camisa / Pulsera del Evento</li>
+              <li>Acceso VIP</li>
+            </ul>
+            <p class="ticketInclude--cost">$ 180</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+     <footer class="footer">
+      <p>Techno & EDM Festival. Todos los derechos reservados</p>
+     </footer>
+
+     <!-- JavaScript -->
+
+     <script src="js/scripts.min.js"></script>
+
+  </body>
+</html>

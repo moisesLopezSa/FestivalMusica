@@ -1,0 +1,15 @@
+@use "global/colors" as c;
+@use "global/mixin" as m;
+
+/* FOOTER */
+
+.footer {
+  background-color: c.$pink;
+  text-align: center;
+  color: c.$white;
+  padding: 2rem;
+  p{
+    margin: 0;
+    font-size: 2rem;
+  }
+}

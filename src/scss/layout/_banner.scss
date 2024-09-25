@@ -1,0 +1,45 @@
+@use "global/colors" as c;
+@use "global/mixin" as m;
+
+/* BANNER */
+
+.banner {
+  position: relative;
+  max-height: 70rem;
+  min-height: 50rem;
+  overflow: hidden;
+  .banner__overlay {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      270deg, 
+      rgba(c.$purple,60%),
+      rgba(darken(c.$purple,20%),90%)
+    );
+  }
+  .banner__video {
+    position: block;
+    width: auto;
+    @include m.tablet{
+      width: 100%;
+    }
+  }
+}
+
+.banner__overlay--content {
+  color: c.$white;
+  h1 {
+    font-size: 7rem;
+    margin: 0;
+  }
+
+  p {
+    display: inline-block;
+    background-color: c.$pink;
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+  }
+}
